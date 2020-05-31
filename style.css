@@ -1,0 +1,269 @@
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+
+/* HEADER SECTION */
+
+#header .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+/* Navbar */
+
+.navbar {
+    transition: 1s ease;
+}
+
+.mobile-opened {
+    background-color: rgb(36, 36, 36);
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #2196f3;
+}
+
+.navbar-nav {
+    padding-right: 4%;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.navbar-dark .navbar-brand {
+    color: #2196f3;
+}
+
+.navbar-dark .navbar-brand:hover {
+    color: #2196f3;
+}
+
+.navbar-brand {
+    padding-left: 4%;
+}
+
+.nav-item,
+.navbar-brand {
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 1.1 rem;
+}
+
+.navbar.scrolled {
+    background-color: rgb(36, 36, 36);
+}
+
+
+/* Background */
+
+.bg {
+    background-image: url("images/Farhaz2.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+h1 {
+    font-weight: 600;
+    color: #2196f3;
+    font-size: 2.8rem;
+}
+
+.header-text p {
+    margin-bottom: 0;
+    font-size: 1.3rem;
+}
+
+.header-text {
+    margin-left: 10%;
+    margin-top: 20%;
+}
+
+
+/* ABOUT SECTION */
+
+#about {
+    margin-top: 7%;
+}
+
+h4 {
+    margin-top: 2%;
+    font-size: 1.5rem;
+}
+
+
+/* SERVICE SECTION */
+
+.container-fluid {
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+#service {
+    margin-top: 7%;
+}
+
+.service-container {
+    text-align: center;
+}
+
+.service-image {
+    border: 1px solid #cccccc;
+    padding: 1%;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+h2 {
+    font-family: 'Ubuntu';
+    padding-bottom: 1%;
+}
+
+h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 2% 0;
+}
+
+
+/* CONTACT SECTION */
+
+#contact {
+    margin-top: 7%;
+}
+
+.btn {
+    margin-top: 1.4%;
+    background-color: #2196f3;
+    border-color: #2196f3;
+}
+
+.btn-success:not(:disabled):not(.disabled):active {
+    background-color: #2196f3;
+    border-color: #2196f3;
+}
+
+.btn-success:focus {
+    box-shadow: 0 0 0 .2rem rgba(16, 126, 216, 0.5);
+}
+
+h5 {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.c-p {
+    font-size: 1rem;
+}
+
+.contact-container-data {
+    margin-bottom: 2%;
+}
+
+.label-name {
+    font-weight: 600;
+}
+
+
+/* FOOTER SECTION */
+
+footer {
+    margin-top: 10%;
+}
+
+.filler {
+    height: 7vh;
+    background-color: rgb(36, 36, 36);
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #2196f3;
+    font-size: 1.2rem;
+}
+
+.footer-link {
+    padding: 0 1%;
+    cursor: pointer;
+}
+
+.btn-success:hover {
+    background-color: #1b6daf;
+    border-color: #1b6daf;
+}
+
+
+/* STICKY BUTTON */
+
+.sticky-button {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.sticky-phone {
+    background-color: #0d5086;
+    color: white;
+    border-radius: 100%;
+    padding: 0.7rem;
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+.sticky-phone:hover {
+    background-color: #1b67a5;
+}
+
+.fa-whatsapp {
+    background-color: #25D366;
+    color: white;
+    border-radius: 100%;
+    padding: 0.7rem;
+    font-size: 1.8rem;
+}
+
+.fa-whatsapp:hover {
+    background-color: rgb(24, 177, 80);
+}
+
+@media only screen and (max-width: 700px) {
+    .bg {
+        height: 40vh;
+    }
+    h4 {
+        font-size: 1.1rem;
+    }
+    .fname-form {
+        margin-bottom: 4%;
+    }
+    .btn {
+        margin-top: 4%;
+    }
+    .footer-link {
+        padding: 0 4%;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .header-text p {
+        margin-bottom: 0;
+        font-size: 1rem;
+    }
+}
